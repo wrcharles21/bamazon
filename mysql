@@ -1,0 +1,44 @@
+DROP DATABASE IF EXISTS bamazon;
+CREATE database bamazon;
+
+USE bamazon;
+
+CREATE TABLE products (
+  id INT NOT NULL AUTO_INCREMENT,
+  item_id INT NULL,
+  product_name VARCHAR (100) NULL,
+  department_name VARCHAR (100) NULL,
+  price DECIMAL (10,4) NULL,
+  stock_quantity INT NULL,
+  primary key (id)
+);
+
+INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
+VALUES (1230, "Bicycle", "Sports", 200.00, 10);
+
+INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
+VALUES (1231, "ipod shuffle", "electronics", 50.69, 3);
+
+INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
+VALUES (1232, "Binder", "School Supplies", 1.00, 25);
+
+INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
+VALUES (1233, "milk", "Food", 1.69, 35);
+
+INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
+VALUES (1234, "football", "Sports", 10.25, 15);
+
+INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
+VALUES (1235, "Jordans", "Shoes", 120.89, 10);
+
+INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
+VALUES (1236, "Surface Pro", "electronics", 400.76, 3);
+
+INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
+VALUES (1237, "XBOX", "Entertainment", 399.88,100);
+
+INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
+VALUES (1238, "Oranges", "Food", 0.60, 35);
+
+INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
+VALUES (1239, "Hat", "Clothing", 20.99,12);
